@@ -86,4 +86,13 @@ describe("Park", function() {
     assert.strictEqual(park1.numberOfDinosaurs(10), 285);
   });
 
+  it("should be able to calculate number of dinosaurs after year 100, starting with 5 dinosaurs", function() {
+    park1.addDino(dinosaur1);
+    park1.addDino(dinosaur2);
+    park1.addDino(dinosaur3);
+    park1.addDino(dinosaur4);
+    park1.addDino(dinosaur5);
+    assert.strictEqual(park1.numberOfDinosaurs(100), 2805);
+  });
+
 })
